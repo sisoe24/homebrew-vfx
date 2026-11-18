@@ -4,7 +4,15 @@ This repository contains formulae for VFX software that are not available in the
 
 ## Taps
 
-- `nuke` - [Nuke15.1v3](https://www.foundry.com/products/nuke)
+Each cask installs into its own versioned folder, so versions install side by side.
+
+| Cask | Version | Notes |
+| --- | --- | --- |
+| `nuke` | 17.1v3 | Latest release |
+| `nuke@16` | 16.1v5 | |
+| `nuke@15` | 15.2v9 (Intel), 15.2v7 (Apple silicon) | Foundry has no arm64 build of 15.2v9 |
+
+See [Foundry's Nuke page](https://www.foundry.com/products/nuke).
 
 ## How do I install these formulae?
 
@@ -24,6 +32,7 @@ Example:
 ```bash
 brew tap sisoe24/vfx
 brew install nuke
+brew install nuke@15
 ```
 
 ## Documentation
